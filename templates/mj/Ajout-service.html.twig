@@ -1,0 +1,43 @@
+{% extends "base.html.twig" %}
+{% block body %}
+
+<section class="page-section clearfix">
+    <div class="card-body"></div>
+        <div class="container admin">
+            <div class="card">
+                <div class="card-body">
+                    <h1><strong> Enregistrer un service:</strong></h1>
+                        <div class="card-body">
+                            {{form_start(formservice)}}
+                            <div class="form-group">
+                                <label for="name">Service:</label>
+                                <span class="help-inline"></span>
+                                 {{ form_widget(formservice.Libelle)}}
+                            </div>
+                            
+                                <button type="submit" class="btn btn-primary"><span
+                                        class="glyphicon glyphicon-pencil"></span>
+                                         {% if modifservice %}
+                                         Modifier
+                                         {% else %}
+                                         Ajouter
+                                         {% endif %}</button>
+                                <a href="liste-service" class="btn btn-primary" style="background-color: #218095"><span
+                                        class="glyphicon glyphicon-arrow-left" style="background-color: #218095"></span>
+                                        Retour</a>
+                           
+                                 {{ form_end(formservice) }}
+                       
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{# {% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+<h1>User Sign Up:</h1>
+{{ form(form) }}
+{% endblock %} #}

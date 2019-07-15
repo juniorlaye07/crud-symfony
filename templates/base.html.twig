@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link href="https://bootswatch.com/4/cerulean/bootstrap.min.css" rel="stylesheet">
+        <link href="https://bootswatch.com/4/cerulean/bootstrap.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel=' stylesheet' type='text/css'>
+
+       <script src="https://kit.fontawesome.com/d24d6a03f6.js"></script>
+
+      {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <font style="vertical-align: hériter;">
+            <font style="vertical-align: hériter;">
+                S.A
+            </font>
+        </police>
+    </a>
+  {#  <bouton aria-controls="navbarColor02" aria-expand="false" aria-label="Symphony" class="navbar-toggler" data-target="# navbarColor02" data-toggle="collapse" type="bouton">
+        <span class="navbar-toggler-icon"></span>
+    </button>  #}
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+            <li class="élément de navigation actif">
+                <a class="nav-link" href="mj">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            Accueil
+                        </font>
+                    </font>
+                    <span class="sr-only">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">
+                                (actuel)
+                            </font>
+                        </font>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/form">
+                    <font style="vertical-align: hériter;">
+                        <font style="vertical-align: hériter;">
+                           Ajouter Employe
+                        </font>
+                    </font>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/liste">
+                    <font style="vertical-align: hériter;">
+                        <font style="vertical-align: hériter;">
+                            Employes
+                        </font>
+                    </font>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Ajout-service">
+                    <font style="vertical-align: hériter;">
+                        <font style="vertical-align: hériter;">
+                            Ajouter service
+                        </font>
+                    </font>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/liste-service">
+                    <font style="vertical-align: hériter;">
+                        <font style="vertical-align: hériter;">
+                            Services
+                        </font>
+                    </font>
+                </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+        {% block body %}{% endblock %}
+      
+        {% block javascripts %}{% endblock %}
+</body>
+</html>
